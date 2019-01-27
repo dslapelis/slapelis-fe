@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="about">
-      <h2 class="title">a little about me</h2>
-      <h5 class="info">
+      <h2 v-scroll-reveal class="title">a little about me</h2>
+      <h5 v-scroll-reveal class="info">
         I'm a developer with a passion for Python, web development, and learning new stuff. I enjoy
         building things that make peoples' lives easier...or that just look pretty (kind of --
         still working on this design thing). Really I just enjoy coding and could do this all day.
@@ -10,11 +10,11 @@
     </div>
     <div class="skills">
       <div class="left">
-        <h2 class="title">things I've done</h2>
+        <h2 v-scroll-reveal class="title">things I've done</h2>
       </div>
       <div class="right">
         <h5 class="info">
-          <ul>
+          <ul v-scroll-reveal>
             <li>
               Built automation to automatically increase storage array LUN capacity on the array
               and within the virtualization software.
@@ -56,8 +56,8 @@
       </div>
     </div>
     <div class="wants">
-      <h2 class="title">what I want to do</h2>
-      <h5 class="info">
+      <h2 v-scroll-reveal class="title">what I want to do</h2>
+      <h5 v-scroll-reveal class="info">
         I want to work for
         <b>your company</b> building great products. Ideally I'd be a software engineer or a
         DevOps engineer, but titles don't really matter to me; I just want to code something cool
@@ -68,7 +68,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  mounted() {},
+};
 </script>
 
 <style>
@@ -107,7 +109,7 @@ export default {};
   padding: 5vw;
 }
 .skills li {
-  font-size: 1.2vw;
+  font-size: 1.5vw;
   padding-top: 1vw;
 }
 .skills a {

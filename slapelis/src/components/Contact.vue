@@ -1,14 +1,14 @@
 <template>
   <div class="contact">
     <div class="left">
-      <h2 class="title">I really want to talk to you too</h2>
+      <h2 v-scroll-reveal class="title">I really want to talk to you too</h2>
     </div>
     <div class="right">
       <h5>
-        <a href="tel:+15852613121">585-261-3121</a>
+        <a v-scroll-reveal href="tel:+15852613121">585-261-3121</a>
       </h5>
       <h5>
-        <a href="mailto:djs7209@rit.edu">djs7209@rit.edu</a>
+        <a v-scroll-reveal href="mailto:djs7209@rit.edu">djs7209@rit.edu</a>
       </h5>
     </div>
   </div>

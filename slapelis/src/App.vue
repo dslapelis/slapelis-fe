@@ -2,9 +2,9 @@
   <div id="app">
     <div id="nav">
       <div>
-        <router-link to="/">Home</router-link>&nbsp;|
-        <router-link to="/about">About</router-link>&nbsp;|
-        <router-link to="/test">Test</router-link>&nbsp;
+        <router-link to="/">home</router-link>&nbsp;|
+        <router-link to="/about">about</router-link>&nbsp;|
+        <router-link to="/test">test</router-link>&nbsp;
       </div>
     </div>
     <router-view/>
@@ -21,6 +21,8 @@
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 #nav {
   background-color: #3a405a;
@@ -32,6 +34,7 @@
   font-size: 3vh;
   position: fixed;
   height: auto;
+  z-index: 999;
 }
 
 #nav a {
