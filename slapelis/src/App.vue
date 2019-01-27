@@ -12,11 +12,15 @@
 </template>
 
 <style>
+::selection {
+  background-color: black;
+}
 #app {
   font-family: 'Montserrat', 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+  overflow: hidden;
 }
 #nav {
   background-color: #3a405a;
@@ -35,6 +39,6 @@
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #f47171;
 }
 </style>
